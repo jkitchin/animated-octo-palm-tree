@@ -1,0 +1,12 @@
+name: animated-octo-palm-tree
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: make some files
+      run: echo `date` > date.txt
