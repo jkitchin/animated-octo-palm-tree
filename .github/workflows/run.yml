@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    
     - uses: purcell/setup-emacs@master
       with:
         version: snapshot
@@ -21,6 +21,7 @@ jobs:
         python-version: "3.x"
       
     - name: install pytest
+      uses: actions/checkout@v2
       run: pip install pytest
       
     - name: python tests
@@ -29,4 +30,4 @@ jobs:
         
 
     - name: Run tests
-      run: which emacs
+      run: which emacs; emacs --version
