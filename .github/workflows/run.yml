@@ -8,6 +8,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - uses: purcell/setup-emacs@master
+      with:
+        version: snapshot
+      
     - name: make some files
       run: echo `date` > date.txt
 
@@ -22,8 +26,7 @@ jobs:
     - name: python tests
       run:  ls
 
-    - name: emacs
-      uses: purcell/setup-emacs@master
+        
 
     - name: Run tests
       run: which emacs
