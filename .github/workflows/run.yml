@@ -10,3 +10,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: make some files
       run: echo `date` > date.txt
+
+    - name: python tests
+      run: pytest
+
