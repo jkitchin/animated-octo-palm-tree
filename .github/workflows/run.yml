@@ -23,7 +23,7 @@ jobs:
       run:  ls
 
     - name: emacs
-      - uses: purcell/setup-emacs@master
+      uses: purcell/setup-emacs@master
 
     - name: Run tests
       run: which emacs
