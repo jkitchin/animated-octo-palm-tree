@@ -28,4 +28,4 @@ jobs:
 
         
     - name: Run emacs tests
-      run: emacs -batch -l ert -f ert-summarize-tests-batch-and-exit
+      run: emacs -batch -l ert -l tests.el -f ert-summarize-tests-batch-and-exit
