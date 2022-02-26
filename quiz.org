@@ -12,3 +12,6 @@ print(40 + 2)
 42
 :END:
 
+#+BEGIN_SRC jupyter-python
+answer_c = "apple"
+#+END_SRC

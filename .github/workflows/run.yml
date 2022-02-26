@@ -24,7 +24,7 @@ jobs:
       run: pip install pytest
       
     - name: python tests
-      run:  pytest
+      run:  pytest test_python.py
 
         
     - name: Run emacs tests
@@ -32,3 +32,8 @@ jobs:
         pwd
         ls
         emacs -batch -l ert -l tests.el -f  ert-run-tests-batch-and-exit
+
+    - name: notebook tests
+      run: |
+        pip install import-ipynb
+        pytest test_ipynb.py
