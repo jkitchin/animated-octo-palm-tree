@@ -11,6 +11,12 @@ jobs:
     - name: make some files
       run: echo `date` > date.txt
 
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+        run: pip install pytest
+
     - name: python tests
       run: pytest
 
