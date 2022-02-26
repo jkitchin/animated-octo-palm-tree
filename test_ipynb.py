@@ -3,4 +3,4 @@ import quiz
 import pytest
 
 def test_c():
-    assert answer_c == 'pear'
+    assert quiz.answer_c == 'apple'
