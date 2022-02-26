@@ -43,3 +43,4 @@ jobs:
     - name: ipynb tests
       run: |
         pip install ipynb
+        pytest test_ipynb.py
