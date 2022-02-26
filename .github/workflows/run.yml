@@ -28,4 +28,7 @@ jobs:
 
         
     - name: Run emacs tests
-      run: emacs -batch -l ert -l tests.el -f ert-summarize-tests-batch-and-exit
+      run: |
+        pwd
+        ls
+        emacs -batch -l ert -l tests.el -f ert-summarize-tests-batch-and-exit
