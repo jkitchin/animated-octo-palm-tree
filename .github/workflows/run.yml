@@ -25,9 +25,8 @@ jobs:
       run: pip install pytest
       
     - name: python tests
-      run:  ls
+      run:  pytest
 
         
-
     - name: Run tests
       run: which emacs; emacs --version
