@@ -27,5 +27,5 @@ jobs:
       run:  pytest
 
         
-    - name: Run tests
-      run: which emacs; emacs --version
+    - name: Run emacs tests
+      run: emacs -batch -l ert -f ert-summarize-tests-batch-and-exit
