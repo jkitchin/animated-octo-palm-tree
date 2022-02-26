@@ -24,4 +24,6 @@ jobs:
 
     - name: emacs
       - uses: purcell/setup-emacs@master
-      - run: which emacs
+
+    - name: Run tests
+      run: which emacs
