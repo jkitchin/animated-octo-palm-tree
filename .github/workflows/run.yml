@@ -38,4 +38,8 @@ jobs:
         pip install jupyter
         pip install nbconvert
         jupyter nbconvert --to script quiz.ipynb        
-        pytest test_ipynb.py
+        pytest test_notebook.py
+
+    - name: ipynb tests
+      run: |
+        pip install ipynb
