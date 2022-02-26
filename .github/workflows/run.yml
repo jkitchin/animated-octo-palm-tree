@@ -20,5 +20,8 @@ jobs:
       run: pip install pytest
       
     - name: python tests
-      run:  pytest
+      run:  ls; pytest
 
+    - name: emacs
+      - uses: purcell/setup-emacs@master
+      - run: which emacs
