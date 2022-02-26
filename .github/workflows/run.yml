@@ -35,5 +35,5 @@ jobs:
 
     - name: notebook tests
       run: |
-        pip install import-ipynb
+        jupyter nbconvert --to script quiz.ipynb        
         pytest test_ipynb.py

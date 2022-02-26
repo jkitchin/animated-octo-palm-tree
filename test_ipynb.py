@@ -1,5 +1,3 @@
-import import_ipynb
-
 import quiz
 
 import pytest
