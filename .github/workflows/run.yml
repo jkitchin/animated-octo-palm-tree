@@ -44,3 +44,8 @@ jobs:
       run: |
         pip install ipynb
         pytest test_ipynb.py
+
+    - name: testbook tests
+      run: |
+        pip install testbook
+        pytest test_tbook.py
