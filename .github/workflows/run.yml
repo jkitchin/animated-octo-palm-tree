@@ -49,3 +49,9 @@ jobs:
       run: |
         pip install testbook
         pytest test_tbook.py
+
+
+    - uses: education/autograding@v1
+      name: "** Grading and Feedback **"
+      id: autograde
+      continue-on-error: true        
